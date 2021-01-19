@@ -54,6 +54,10 @@ const render = (node) => {
 
 render();
 
+$(".searchForm input").on("keypress", (e) => {
+  e.stopPropagation();
+});
+
 $(".addButton").on("click", () => {
   let url = window.prompt("你要添加什么网址?");
   if (url.indexOf("http") !== 0) {

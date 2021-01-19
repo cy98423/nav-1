@@ -150,6 +150,9 @@ var render = function render(node) {
 };
 
 render();
+$(".searchForm input").on("keypress", function (e) {
+  e.stopPropagation();
+});
 $(".addButton").on("click", function () {
   var url = window.prompt("你要添加什么网址?");
 
@@ -179,4 +182,4 @@ $(document).on("keypress", function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.7ff9a485.js.map
+//# sourceMappingURL=main.d0e77c93.js.map
